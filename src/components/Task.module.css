@@ -1,0 +1,87 @@
+.taskBox{
+    width: 100%;
+    max-width: var(--content-width);
+    border-radius: 8px;
+    background-color: var(--gray-500);
+    border: 1px solid var(--gray-400);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin-top: 1.5rem;
+}
+
+.taskBox + .taskBox{
+    margin-top: 1rem;
+}
+
+.taskBox span{
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.taskBox span.completed{
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.taskBox svg{
+    width: 1.5rem;
+    color: var(--gray-300);
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.taskBox svg:hover{
+    color: var(--red-500);
+    transform: scale(1.1);
+}
+
+.taskCheckedBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskCheckedBox > div{
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: var(--purple-700);
+    border-radius: 50%;
+    transition: all 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskCheckedBox > div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.taskCheckedBox > div > svg{
+    width: 0.75rem;
+    color: var(--gray-100);
+}
+
+.taskUncheckedBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskUncheckedBox > div{
+    width: 1.125rem;
+    height: 1.125rem;
+    border: 2px solid var(--blue-500);
+    border-radius: 50%;
+    transition: all 0.1s;
+}
+
+.taskUncheckedBox > div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

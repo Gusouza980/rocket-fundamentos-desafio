@@ -1,0 +1,26 @@
+.taskCheckedBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskCheckedBox > div{
+    width: 1.125rem;
+    height: 1.125rem;
+    background-color: var(--purple-700);
+    border-radius: 50%;
+    transition: all 0.1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskCheckedBox > div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.taskCheckedBox > div > svg{
+    width: 0.75rem;
+    color: var(--gray-100);
+}

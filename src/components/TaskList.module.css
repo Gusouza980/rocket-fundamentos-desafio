@@ -1,0 +1,82 @@
+.taskListBox{
+    max-width: var(--content-width);
+    margin: 4rem auto 0 auto;
+}
+
+.taskListBox header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createdTasks{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.createdTasks strong{
+    color: var(--blue-500);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.createdTasks span{
+    background-color: var(--gray-400);
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    color: var(--gray-100);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.completedTasks{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.completedTasks strong{
+    color: var(--purple-500);
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.completedTasks span{
+    background-color: var(--gray-400);
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    color: var(--gray-100);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.emptyTaskBox{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    border-top: 1px solid var(--gray-400);
+}
+
+.emptyTaskBox img{
+    width: 3.5rem;
+    height: auto;
+}
+
+.emptyTaskBox strong{
+    color: var(--gray-300);
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.emptyTaskBox p{
+    color: var(--gray-300);
+    font-size: 1rem;
+    font-weight: regular;
+    text-align: center;
+}
